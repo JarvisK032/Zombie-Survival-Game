@@ -1,0 +1,12 @@
+C:\Users\jarvi\Documents\cse210\cse210-course-experimental-main\Byui.Games\bin\Debug\net6.0\Byui.Games.deps.json
+C:\Users\jarvi\Documents\cse210\cse210-course-experimental-main\Byui.Games\bin\Debug\net6.0\Byui.Games.dll
+C:\Users\jarvi\Documents\cse210\cse210-course-experimental-main\Byui.Games\bin\Debug\net6.0\Byui.Games.pdb
+C:\Users\jarvi\Documents\cse210\cse210-course-experimental-main\Byui.Games\obj\Debug\net6.0\Byui.Games.csproj.AssemblyReference.cache
+C:\Users\jarvi\Documents\cse210\cse210-course-experimental-main\Byui.Games\obj\Debug\net6.0\Byui.Games.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jarvi\Documents\cse210\cse210-course-experimental-main\Byui.Games\obj\Debug\net6.0\Byui.Games.AssemblyInfoInputs.cache
+C:\Users\jarvi\Documents\cse210\cse210-course-experimental-main\Byui.Games\obj\Debug\net6.0\Byui.Games.AssemblyInfo.cs
+C:\Users\jarvi\Documents\cse210\cse210-course-experimental-main\Byui.Games\obj\Debug\net6.0\Byui.Games.csproj.CoreCompileInputs.cache
+C:\Users\jarvi\Documents\cse210\cse210-course-experimental-main\Byui.Games\obj\Debug\net6.0\Byui.Games.dll
+C:\Users\jarvi\Documents\cse210\cse210-course-experimental-main\Byui.Games\obj\Debug\net6.0\refint\Byui.Games.dll
+C:\Users\jarvi\Documents\cse210\cse210-course-experimental-main\Byui.Games\obj\Debug\net6.0\Byui.Games.pdb
+C:\Users\jarvi\Documents\cse210\cse210-course-experimental-main\Byui.Games\obj\Debug\net6.0\ref\Byui.Games.dll

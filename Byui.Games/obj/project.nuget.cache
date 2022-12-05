@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "gIpgRew1pIc339U71YM4Etx+zoGkKvv6jV8gMwuA/gz2rPhHWEIWkVoFamBYEoUP+Kmv9TgiyV3i+Ae+gqDn3w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jarvi\\Documents\\cse210\\cse210-course-experimental-main\\Byui.Games\\Byui.Games.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jarvi\\.nuget\\packages\\raylib-cs\\4.0.0.1\\raylib-cs.4.0.0.1.nupkg.sha512",
+    "C:\\Users\\jarvi\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
