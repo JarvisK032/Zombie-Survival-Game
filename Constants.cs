@@ -11,7 +11,7 @@ namespace Unit06
         // ----------------------------------------------------------------------------------------- 
 
         // GAME
-        public static string GAME_NAME = "Batter";
+        public static string GAME_NAME = "Zombie Survival Game";
         public static int FRAME_RATE = 60;
 
         // SCREEN
@@ -31,7 +31,6 @@ namespace Unit06
         public static int FONT_SIZE = 32;
 
         // SOUND
-        public static string BOUNCE_SOUND = "Assets/Sounds/boing.wav";
         public static string WELCOME_SOUND = "Assets/Sounds/start.wav";
         public static string OVER_SOUND = "Assets/Sounds/over.wav";
 
@@ -117,7 +116,7 @@ namespace Unit06
         public static string COURSEFEATURE_GROUP = "course features";
         public static int COURSEFEATURE_VELOCITY = -5;
 
-        
+
         // OBSTACLE
         public static string OBSTACLE_GROUP = "obstacles";
         public static string OBSTACLE_IMAGE = "Assets/Images/obstacle.png";
@@ -126,9 +125,6 @@ namespace Unit06
 
         // POWERUP
         public static string POWERUP_GROUP = "powerup";
-        public static string POWERUP_IMAGE = "Assets/Images/powerUp.png";
-        public static int POWERUP_WIDTH = 25;
-        public static int POWERUP_HEIGHT = 25;
 
         // FINISH LINE
         public static string FINISH_LINE_GROUP = "finishLine";
@@ -137,7 +133,7 @@ namespace Unit06
         public static int FINISH_LINE_HEIGHT = 25;
         public static int FINISH_LINE_DISTANCE = 3000;
 
-       
+
         // DIALOG
         public static string DIALOG_GROUP = "dialogs";
         public static string ENTER_TO_START = "PRESS ENTER TO START";

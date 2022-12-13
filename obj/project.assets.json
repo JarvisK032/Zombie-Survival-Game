@@ -125,9 +125,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jarvi\\Documents\\github\\cse210final\\cse210game\\unit06-game.csproj",
-      "projectName": "unit06-game",
-      "projectPath": "C:\\Users\\jarvi\\Documents\\github\\cse210final\\cse210game\\unit06-game.csproj",
+      "projectUniqueName": "C:\\Users\\jarvi\\Documents\\github\\cse210final\\cse210game\\ZombieSurvivalGame.csproj",
+      "projectName": "ZombieSurvivalGame",
+      "projectPath": "C:\\Users\\jarvi\\Documents\\github\\cse210final\\cse210game\\ZombieSurvivalGame.csproj",
       "packagesPath": "C:\\Users\\jarvi\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\jarvi\\Documents\\github\\cse210final\\cse210game\\obj\\",
       "projectStyle": "PackageReference",
