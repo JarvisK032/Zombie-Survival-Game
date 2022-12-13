@@ -6,18 +6,20 @@ namespace Unit06.Game.Scripting
 {
     public class CollideBordersAction : Action
     {
-        private AudioService _audioService;
-        private PhysicsService _physicsService;
+        private AudioService audioService;
+        private PhysicsService physicsService;
         
         public CollideBordersAction(PhysicsService physicsService, AudioService audioService)
         {
-            this._physicsService = physicsService;
-            this._audioService = audioService;
+            this.physicsService = physicsService;
+            this.audioService = audioService;
         }
 
+        
         public void Execute(Cast cast, Script script, ActionCallback callback)
         {
-            Ball ball = (Ball)cast.GetFirstActor(Constants.BALL_GROUP);
+            /*
+            Player ball = (Player)cast.GetFirstActor(Constants.PLAYER_GROUP);
             Body body = ball.GetBody();
             Point position = body.GetPosition();
             int x = position.GetX();
@@ -28,20 +30,20 @@ namespace Unit06.Game.Scripting
             if (x < Constants.FIELD_LEFT)
             {
                 ball.BounceX();
-                _audioService.PlaySound(bounceSound);
+                audioService.PlaySound(bounceSound);
             }
-            else if (x >= Constants.FIELD_RIGHT - Constants.BALL_WIDTH)
+            else if (x >= Constants.FIELD_RIGHT - Constants.PLAYER_WIDTH)
             {
                 ball.BounceX();
-                _audioService.PlaySound(bounceSound);
+                audioService.PlaySound(bounceSound);
             }
 
             if (y < Constants.FIELD_TOP)
             {
                 ball.BounceY();
-                _audioService.PlaySound(bounceSound);
+                audioService.PlaySound(bounceSound);
             }
-            else if (y >= Constants.FIELD_BOTTOM - Constants.BALL_WIDTH)
+            else if (y >= Constants.FIELD_BOTTOM - Constants.PLAYER_WIDTH)
             {
                 Stats stats = (Stats)cast.GetFirstActor(Constants.STATS_GROUP);
                 stats.RemoveLife();
@@ -53,9 +55,11 @@ namespace Unit06.Game.Scripting
                 else
                 {
                     callback.OnNext(Constants.GAME_OVER);
-                    _audioService.PlaySound(overSound);
+                    audioService.PlaySound(overSound);
                 }
             }
+            */
         }
+        
     }
 }

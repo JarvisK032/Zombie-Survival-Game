@@ -9,10 +9,10 @@ namespace Unit06.Game.Services
 {
     public class RaylibVideoService : VideoService
     {
-        private Casting.Color _color;
-        private int _height;
-        private string _title;
-        private int _width;
+        private Casting.Color color;
+        private int height;
+        private string title;
+        private int width;
         
         private Dictionary<string, Raylib_cs.Font> fonts
             = new Dictionary<string, Raylib_cs.Font>();
@@ -22,15 +22,15 @@ namespace Unit06.Game.Services
         
         public RaylibVideoService(string title, int width, int height, Casting.Color color)
         {
-            this._title = title;
-            this._width = width;
-            this._height = height;
-            this._color = color;
+            this.title = title;
+            this.width = width;
+            this.height = height;
+            this.color = color;
         }
         /// </inheritdoc>
         public void ClearBuffer()
         {
-            Raylib_cs.Color background = ToRaylibColor(_color);
+            Raylib_cs.Color background = ToRaylibColor(color);
             Raylib.BeginDrawing();
             Raylib.ClearBackground(background);
         }
@@ -103,7 +103,7 @@ namespace Unit06.Game.Services
         /// </inheritdoc>
         public void Initialize()
         {
-            Raylib.InitWindow(_width, _height, _title);
+            Raylib.InitWindow(width, height, title);
             Raylib.SetTargetFPS(Constants.FRAME_RATE);
         }
 

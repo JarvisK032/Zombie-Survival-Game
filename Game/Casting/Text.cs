@@ -5,22 +5,22 @@ namespace Unit06.Game.Casting
     /// </summary>
     public class Text
     {
-        private string _value;
-        private string _fontFile;
-        private int _size;
-        private int _alignment;
-        private Color _color;
+        private string value;
+        private string fontFile;
+        private int size;
+        private int alignment;
+        private Color color;
 
         /// <summary>
         /// Constructs a new instance of Actor.
         /// </summary>
         public Text(string value, string fontFile, int size, int alignment, Color color)
         {
-            this._value = value;
-            this._fontFile = fontFile;
-            this._size = size;
-            this._alignment = alignment;
-            this._color = color;
+            this.value = value;
+            this.fontFile = fontFile;
+            this.size = size;
+            this.alignment = alignment;
+            this.color = color;
         }
 
         /// <summary>
@@ -29,7 +29,7 @@ namespace Unit06.Game.Casting
         /// <returns>The alignment.</returns>
         public int GetAlignment()
         {
-            return _alignment;
+            return alignment;
         }
 
         /// <summary>
@@ -38,7 +38,7 @@ namespace Unit06.Game.Casting
         /// <returns>The color.</returns>
         public Color GetColor()
         {
-            return _color;
+            return color;
         }
 
         /// <summary>
@@ -47,7 +47,7 @@ namespace Unit06.Game.Casting
         /// <returns>The fontfile.</returns>
         public string GetFontFile()
         {
-            return _fontFile;
+            return fontFile;
         }
 
         /// <summary>
@@ -56,7 +56,7 @@ namespace Unit06.Game.Casting
         /// <returns>The size.</returns>
         public int GetSize()
         {
-            return _size;
+            return size;
         }
 
         /// <summary>
@@ -65,7 +65,7 @@ namespace Unit06.Game.Casting
         /// <returns>The value.</returns>
         public string GetValue()
         {
-            return _value;
+            return value;
         }
 
         /// <summary>
@@ -74,7 +74,7 @@ namespace Unit06.Game.Casting
         /// <param name="value">The given value.</param>
         public void SetValue(string value)
         {
-            this._value = value;
+            this.value = value;
         }
     }
 }

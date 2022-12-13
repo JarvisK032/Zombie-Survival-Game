@@ -5,16 +5,16 @@ namespace Unit06.Game.Casting
     /// </summary>
     public class Rectangle
     {
-        private Point _position;
-        private Point _size;
+        private Point position;
+        private Point size;
         
         /// <summary>
         /// Constructs a new instance of Rectangle.
         /// </summary>
         public Rectangle(Point position, Point size)
         {
-            this._position = position;
-            this._size = size;
+            this.position = position;
+            this.size = size;
         }
 
         /// <summary>
@@ -23,7 +23,7 @@ namespace Unit06.Game.Casting
         /// <returns>The position.</returns>
         public Point GetPosition()
         {
-            return _position;
+            return position;
         }
 
         /// <summary>
@@ -32,7 +32,7 @@ namespace Unit06.Game.Casting
         /// <returns>The size.</returns>
         public Point GetSize()
         {
-            return _size;
+            return size;
         }
     }
 }

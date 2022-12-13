@@ -11,10 +11,10 @@ namespace Unit06.Game.Directing
     /// </summary>
     public class Director : ActionCallback
     {
-        private Cast _cast;
-        private Script _script;
-        private SceneManager _sceneManager;
-        private VideoService _videoService;
+        private Cast cast;
+        private Script script;
+        private SceneManager sceneManager;
+        private VideoService videoService;
         
         /// <summary>
         /// Constructs a new instance of Director using the given VideoService.
@@ -22,16 +22,16 @@ namespace Unit06.Game.Directing
         /// <param name="videoService">The given VideoService.</param>
         public Director(VideoService videoService)
         {
-            this._videoService = videoService;
-            this._cast = new Cast();
-            this._script = new Script();
-            this._sceneManager = new SceneManager();
+            this.videoService = videoService;
+            this.cast = new Cast();
+            this.script = new Script();
+            this.sceneManager = new SceneManager();
         }
 
         /// </inheritdoc>
         public void OnNext(string scene)
         {
-            _sceneManager.PrepareScene(scene, _cast, _script);
+            sceneManager.PrepareScene(scene, cast, script);
         }
         
         /// <summary>
@@ -42,7 +42,7 @@ namespace Unit06.Game.Directing
             OnNext(Constants.NEW_GAME);
             ExecuteActions(Constants.INITIALIZE);
             ExecuteActions(Constants.LOAD);
-            while (_videoService.IsWindowOpen())
+            while (videoService.IsWindowOpen())
             {
                 ExecuteActions(Constants.INPUT);
                 ExecuteActions(Constants.UPDATE);
@@ -54,10 +54,10 @@ namespace Unit06.Game.Directing
 
         private void ExecuteActions(string group)
         {
-            List<Action> actions = _script.GetActions(group);
+            List<Action> actions = script.GetActions(group);
             foreach(Action action in actions)
             {
-                action.Execute(_cast, _script, this);
+                action.Execute(cast, script, this);
             }
         }
     }

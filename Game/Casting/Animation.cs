@@ -9,24 +9,24 @@ namespace Unit06.Game.Casting
     /// </summary>
     public class Animation
     {
-        private TimeSpan _delay;
-        private List<string> _images;
-        private int _rate;
-        private int _index;
-        private int _frame;
-        private DateTime _startTime;
+        private TimeSpan delay;
+        private List<string> images;
+        private int rate;
+        private int index;
+        private int frame;
+        private DateTime startTime;
 
         /// <summary>
         /// Constructs a new instance of Animation.
         /// </summary>
         public Animation(List<string> images, int rate, int delay)
         {
-            this._images = images;
-            this._rate = rate;
-            this._delay = new TimeSpan(0, 0, delay);
-            this._index = 0;
-            this._frame = 0;
-            this._startTime = DateTime.Now;
+            this.images = images;
+            this.rate = rate;
+            this.delay = new TimeSpan(0, 0, delay);
+            this.index = 0;
+            this.frame = 0;
+            this.startTime = DateTime.Now;
         }
 
         /// <summary>
@@ -35,7 +35,7 @@ namespace Unit06.Game.Casting
         /// <returns>The delay in seconds.</returns>
         public int GetDelay()
         {
-            return _delay.Seconds;
+            return delay.Seconds;
         }
 
         /// <summary>
@@ -44,7 +44,7 @@ namespace Unit06.Game.Casting
         /// <returns>A list of filenames.</returns>
         public List<string> GetImages()
         {
-            return _images;
+            return images;
         }
 
         /// <summary>
@@ -53,7 +53,7 @@ namespace Unit06.Game.Casting
         /// <returns>The animation rate.</returns>
         public int GetRate()
         {
-            return _rate;
+            return rate;
         }
 
         /// <summary>
@@ -62,26 +62,26 @@ namespace Unit06.Game.Casting
         /// <returns>The next image.</returns>
         public Image NextImage()
         {
-            string filename = _images[_index];
+            string filename = images[index];
             Image image = new Image(filename);
 
             DateTime currentTime = DateTime.Now;
-            TimeSpan elapsedTime = currentTime.Subtract(_startTime);
+            TimeSpan elapsedTime = currentTime.Subtract(startTime);
 
-            if (elapsedTime > _delay)
+            if (elapsedTime > delay)
             {
-                _frame++; 
-                if (_frame >= _rate)
+                frame++; 
+                if (frame >= rate)
                 {
-                    _index = (_index + 1) % _images.Count;
-                    _frame = 0;
+                    index = (index + 1) % images.Count;
+                    frame = 0;
                 }
-                filename = _images[_index];
+                filename = images[index];
                 image = new Image(filename);
 
-                if (_index >= _images.Count - 1)
+                if (index >= images.Count - 1)
                 {
-                    _startTime = currentTime;
+                    startTime = currentTime;
                 }
             }
 

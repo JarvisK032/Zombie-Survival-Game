@@ -5,18 +5,18 @@ namespace Unit06.Game.Casting
     /// </summary>
     public class Sound
     {
-        private string _filename;
-        private int _volume;
-        private bool _repeated;
+        private string filename;
+        private int volume;
+        private bool repeated;
         
         /// <summary>
         /// Constructs a new instance of Image.
         /// </summary>
         public Sound(string filename, int volume = 1, bool repeated = false)
         {
-            this._filename = filename;
-            this._volume = volume;
-            this._repeated = repeated;
+            this.filename = filename;
+            this.volume = volume;
+            this.repeated = repeated;
         }
 
         /// <summary>
@@ -25,7 +25,7 @@ namespace Unit06.Game.Casting
         /// <returns>The filename.</returns>
         public string GetFilename()
         {
-            return _filename;
+            return filename;
         }
 
         /// <summary>
@@ -34,7 +34,7 @@ namespace Unit06.Game.Casting
         /// <returns>The volume.</returns>
         public int GetVolume()
         {
-            return _volume;
+            return volume;
         }
 
         /// <summary>
@@ -43,7 +43,7 @@ namespace Unit06.Game.Casting
         /// <returns>True if the sound should be repeated; false if otherwise.</returns>
         public bool IsRepeated()
         {
-            return _repeated;
+            return repeated;
         }
         
     }

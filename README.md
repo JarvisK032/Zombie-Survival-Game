@@ -1,9 +1,8 @@
-# Zombie Survival Shooting Game
+# Zombie Survival Game
 
-Use w, a ,s ,d to move Use space to shoot
-
-You have to pick up ammo when there are gone
-
-Avoid the Zombie while shooting them
+The Zombie is going kill you, you gun in not working.
+Use w, a ,s ,d to move.
+Avoid the Zombie and run to the finish line.
+See who is the winner.
 
 Good luck!

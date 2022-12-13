@@ -8,7 +8,7 @@ namespace Unit06.Game.Casting
     /// </summary>
     public class Cast
     {
-        private Dictionary<string, List<Actor>> _actors = new Dictionary<string, List<Actor>>();
+        private Dictionary<string, List<Actor>> actors = new Dictionary<string, List<Actor>>();
 
         /// <summary>
         /// Constructs a new instance of Cast.
@@ -24,14 +24,14 @@ namespace Unit06.Game.Casting
         /// <param name="actor">The actor to add.</param>
         public void AddActor(string group, Actor actor)
         {
-            if (!_actors.ContainsKey(group))
+            if (!actors.ContainsKey(group))
             {
-                _actors[group] = new List<Actor>();
+                actors[group] = new List<Actor>();
             }
 
-            if (!_actors[group].Contains(actor))
+            if (!actors[group].Contains(actor))
             {
-                _actors[group].Add(actor);
+                actors[group].Add(actor);
             }
         }
 
@@ -41,9 +41,9 @@ namespace Unit06.Game.Casting
         /// <param name="group">The given group.</param>
         public void ClearActors(string group)
         {
-            if (_actors.ContainsKey(group))
+            if (actors.ContainsKey(group))
             {
-                _actors[group] = new List<Actor>();
+                actors[group] = new List<Actor>();
             }
         }
 
@@ -52,9 +52,9 @@ namespace Unit06.Game.Casting
         /// </summary>
         public void ClearAllActors()
         {
-            foreach(string group in _actors.Keys)
+            foreach(string group in actors.Keys)
             {
-                _actors[group] = new List<Actor>();
+                actors[group] = new List<Actor>();
             }
         }
 
@@ -66,9 +66,9 @@ namespace Unit06.Game.Casting
         public List<Actor> GetActors(string group)
         {
             List<Actor> results = new List<Actor>();
-            if (_actors.ContainsKey(group))
+            if (actors.ContainsKey(group))
             {
-                results.AddRange(_actors[group]);
+                results.AddRange(actors[group]);
             }
             return results;
         }
@@ -80,7 +80,7 @@ namespace Unit06.Game.Casting
         public List<Actor> GetAllActors()
         {
             List<Actor> results = new List<Actor>();
-            foreach (List<Actor> result in _actors.Values)
+            foreach (List<Actor> result in actors.Values)
             {
                 results.AddRange(result);
             }
@@ -95,11 +95,24 @@ namespace Unit06.Game.Casting
         public Actor GetFirstActor(string group)
         {
             Actor result = null;
-            if (_actors.ContainsKey(group))
+            if (actors.ContainsKey(group))
             {
-                if (_actors[group].Count > 0)
+                if (actors[group].Count > 0)
                 {
-                    result = _actors[group][0];
+                    result = actors[group][0];
+                }
+            }
+            return result;
+        }
+
+        public Actor GetLastActor(string group)
+        {
+            Actor result = null;
+            if (actors.ContainsKey(group))
+            {
+                if (actors[group].Count > 0)
+                {
+                    result = actors[group][actors[group].Count - 1];
                 }
             }
             return result;
@@ -112,9 +125,9 @@ namespace Unit06.Game.Casting
         /// <param name="actor">The actor to remove.</param>
         public void RemoveActor(string group, Actor actor)
         {
-            if (_actors.ContainsKey(group))
+            if (actors.ContainsKey(group))
             {
-                _actors[group].Remove(actor);
+                actors[group].Remove(actor);
             }
         }
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "f28dHAc9fK2dd4aVA0lCy6WeZFHLbEkrfcTCO2djRnQIIX6w0g8+2Hs8Ejb0Rkyb41YwinXFdm2Kq3Izwmlozw==",
+  "dgSpecHash": "65iBI5UpjOs1ho0GIJAe64Q0CXcJkKj/kLhv1atSC2CtyNh3SEugXG7xTzMvlvOPY3Uy8qBoKQ+ijMEkx2ldTQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jarvi\\Documents\\github\\cse210final\\cse210game\\ShootingGame.csproj",
+  "projectFilePath": "C:\\Users\\jarvi\\Documents\\github\\cse210final\\cse210game\\unit06-game.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jarvi\\.nuget\\packages\\raylib-cs\\3.7.0.1\\raylib-cs.3.7.0.1.nupkg.sha512",
     "C:\\Users\\jarvi\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512"

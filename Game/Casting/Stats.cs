@@ -5,9 +5,9 @@ namespace Unit06.Game.Casting
     /// </summary>
     public class Stats : Actor
     {
-        private int _level;
-        private int _lives;
-        private int _score;
+        private int level;
+        private int lives;
+        private int score;
 
         /// <summary>
         /// Constructs a new instance of Actor.
@@ -15,9 +15,9 @@ namespace Unit06.Game.Casting
         public Stats(int level = 1, int lives = 3, int score = 0, 
                 bool debug = false) : base(debug)
         {
-            this._level = level;
-            this._lives = lives;
-            this._score = score;
+            this.level = level;
+            this.lives = lives;
+            this.score = score;
         }
 
         /// <summary>
@@ -25,7 +25,7 @@ namespace Unit06.Game.Casting
         /// </summary>
         public void AddLevel()
         {
-            _level++;
+            level++;
         }
 
         /// <summary>
@@ -33,7 +33,7 @@ namespace Unit06.Game.Casting
         /// </summary>
         public void AddLife()
         {
-            _lives++;
+            lives++;
         }
 
         /// <summary>
@@ -42,7 +42,7 @@ namespace Unit06.Game.Casting
         /// <param name="points">The given points.</param>
         public void AddPoints(int points)
         {
-            _score += points;
+            score += points;
         }
 
         /// <summary>
@@ -51,7 +51,7 @@ namespace Unit06.Game.Casting
         /// <returns>The level.</returns>
         public int GetLevel()
         {
-            return _level;
+            return level;
         }
 
         /// <summary>
@@ -60,7 +60,7 @@ namespace Unit06.Game.Casting
         /// <returns>The lives.</returns>
         public int GetLives()
         {
-            return _lives;
+            return lives;
         }
 
         /// <summary>
@@ -69,7 +69,16 @@ namespace Unit06.Game.Casting
         /// <returns>The score.</returns>
         public int GetScore()
         {
-            return _score;
+            return score;
+        }
+
+        /// <summary>
+        /// Adds to the score.
+        /// </summary>
+        /// <returns>The score.</returns>
+        public void AddScore()
+        {
+            score += 1;
         }
 
         /// <summary>
@@ -77,10 +86,10 @@ namespace Unit06.Game.Casting
         /// </summary>
         public void RemoveLife()
         {
-            _lives--;
-            if (_lives <= 0)
+            lives--;
+            if (lives <= 0)
             {
-                _lives = 0;
+                lives = 0;
             }
         }
         
