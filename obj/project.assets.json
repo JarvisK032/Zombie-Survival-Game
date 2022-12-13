@@ -125,11 +125,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jarvi\\Documents\\cse210\\cse210-student-articulate-csharp-complete-main\\Unit06\\Unit06.csproj",
-      "projectName": "Unit06",
-      "projectPath": "C:\\Users\\jarvi\\Documents\\cse210\\cse210-student-articulate-csharp-complete-main\\Unit06\\Unit06.csproj",
+      "projectUniqueName": "C:\\Users\\jarvi\\Documents\\github\\cse210final\\cse210game\\ShootingGame.csproj",
+      "projectName": "ShootingGame",
+      "projectPath": "C:\\Users\\jarvi\\Documents\\github\\cse210final\\cse210game\\ShootingGame.csproj",
       "packagesPath": "C:\\Users\\jarvi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jarvi\\Documents\\cse210\\cse210-student-articulate-csharp-complete-main\\Unit06\\obj\\",
+      "outputPath": "C:\\Users\\jarvi\\Documents\\github\\cse210final\\cse210game\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jarvi\\AppData\\Roaming\\NuGet\\NuGet.Config"
