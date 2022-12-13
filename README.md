@@ -1,11 +1,13 @@
 # Zombie Survival Game
 
-The Zombie is going kill you, you gun in not working.
+The Zombie is going kill you, your guns in not working.
 
-Use w, a ,s ,d to move.
+Use w, a ,s ,d to move for player one.
 
-Avoid the Zombie and run to the finish line.
+Use up,left,down,right to move for player two.
 
-See who is the winner.
+Avoid the Zombies and run to the finish line.
+
+See who is the Faster.
 
 Good luck!
